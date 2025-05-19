@@ -13,19 +13,21 @@
     <header>
         <h1>Juan Pérez</h1>
         <nav>
-            <ul>
+            <ol>
                 <li><a href="#perfil">Perfil</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#referencias">Referencias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            </ol>
         </nav>
     </header>
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
-            <p>Breve descripción sobre ti.</p>
+            <img src="https://placehold.co/150x150" alt="Foto de perfil" style="border-radius: 50%; display: block; margin-bottom: 1em;">
+            <p>Estudiante de ESPOL en la carrera de ingeniería en computación, responsable, trabajador, solucionador de problemas.</p>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
@@ -33,15 +35,153 @@
         </section>
         <section id="educacion">
             <h2>Educación</h2>
-            <p>Información sobre tu formación académica.</p>
+            <p>Título de bachiller en la Unidad Educativa Mariscal Sucre.
+            <p>Estudiante de ingeniería en computación en la Escuela Superior Politécnica del Litoral (ESPOL).</p>
+            </p>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
-            <p>Lista de tus habilidades principales.</p>
+            <ul>
+                <li>Java: Desarrollo de aplicaciones orientadas a objetos.</li>
+                <li>Python: Desarrollo de Software.</li>
+                <li>MySQL: Gestión y consulta de bases de datos relacionales.</li>
+                <li>JavaScript: Desarrollo de aplicaciones web interactivas.</li>
+            </ul>
+            <table style="border-collapse: collapse; width: 50%; margin-bottom: 1em; margin-left: auto; margin-right: auto;">
+                <tr>
+                    <th></th>
+                    <th>Básico</th>
+                    <th>Intermedio</th>
+                    <th>Avanzado</th>
+                </tr>
+                <tr>
+                    <th>Java</th>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;">X</td>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;">X</td>
+                </tr>
+                <tr>
+                    <th>MySQL</th>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;">X</td>
+                    <td style="text-align: center;"></td>
+                </tr>
+                <tr>
+                    <th>JavaScript</th>
+                    <td style="text-align: center;">X</td>
+                    <td style="text-align: center;"></td>
+                    <td style="text-align: center;"></td>
+                </tr>
+            </table>
+            <p>Estructuras de Datos</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LQdE7AT2Qpg?si=eDgCLQvQ6u7nTHng" 
+                title="Ejemplo de uso de Estructuras de Datos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </section>
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <article>
+                <blockquote>
+                    Frase
+                </blockquote>
+                <p>
+                    <span>Nombre</span><br>
+                    Cargo<br>
+                    Descripción
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    Frase2
+                </blockquote>
+                <p>
+                    <span>Nombre2</span><br>
+                    Cargo2<br>
+                    Descripción2
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    Frase3
+                </blockquote>
+                <p>
+                    <span>Nombre3</span><br>
+                    Cargo3<br>
+                    Descripción3
+                </p>
+            </article>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
             <p>Información para que puedan contactarte.</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="trabajo">Oferta de trabajo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <label>
+                        <input type="radio"
+                        id="contacto-email"
+                        name="contacto" value="email" required>
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio"
+                        id="contacto-telefono"
+                        name="contacto" value="telefono" required>
+                        Teléfono
+                    </label>
+                </fieldset>
+
+                <label>Lenguajes de interés:</label>
+                <div>
+                    <label>
+                        <input type="checkbox" name="lenguajes[]" value="python" required>
+                        Python
+                    </label>
+                    <label>
+                        <input type="checkbox" name="lenguajes[]" value="java" required>
+                        Java
+                    </label>
+                    <label>
+                        <input type="checkbox" name="lenguajes[]" value="javascript" required>
+                        JavaScript
+                    </label>
+                    <label>
+                        <input type="checkbox" name="lenguajes[]" value="c++" required>
+                        C++
+                    </label>
+                </div>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.442242383132!2d-79.96740373040946!3d-2.1479347999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13e7e6b2b1e1%3A0x7e8e2e7e8e2e7e8e!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716134400000!5m2!1ses!2sec" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
     </main>
     <footer>
