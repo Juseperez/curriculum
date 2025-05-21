@@ -6,47 +6,48 @@
     <meta name="keywords" content="CV, Curriculum, Desarrollo, Programación">
     <meta name="description" content="Curriculum Vitae de Juan Pérez">
     <meta name="author" content="Juan Pérez">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
+    <link rel="stylesheet" href="./stylesheets/style.css">
     <title>Curriculum Vitae de Juan Pérez</title>
 </head>
 <body>
     <header>
         <h1>Juan Pérez</h1>
         <nav>
-            <ol>
+            <ul>
                 <li><a href="#perfil">Perfil</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#referencias">Referencias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-            </ol>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="perfil">
-            <h2>Perfil</h2>
-            <img src="https://placehold.co/150x150" alt="Foto de perfil" style="border-radius: 50%; display: block; margin-bottom: 1em;">
+            <h2 class="subtitle">Perfil</h2>
+            <img src="https://placehold.co/150x150" id="photo" alt="Foto de perfil" style="border-radius: 50%; display: block; margin-bottom: 1em;">
             <p>Estudiante de ESPOL en la carrera de ingeniería en computación, responsable, trabajador, solucionador de problemas.</p>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <p>Detalles sobre tu experiencia laboral.</p>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <p>Título de bachiller en la Unidad Educativa Mariscal Sucre.
             <p>Estudiante de ingeniería en computación en la Escuela Superior Politécnica del Litoral (ESPOL).</p>
             </p>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
+            <h2 class="subtitle">Habilidades</h2>
+            <output>
                 <li>Java: Desarrollo de aplicaciones orientadas a objetos.</li>
                 <li>Python: Desarrollo de Software.</li>
                 <li>MySQL: Gestión y consulta de bases de datos relacionales.</li>
                 <li>JavaScript: Desarrollo de aplicaciones web interactivas.</li>
-            </ul>
+            </ol>
             <table style="border-collapse: collapse; width: 50%; margin-bottom: 1em; margin-left: auto; margin-right: auto;">
                 <tr>
                     <th></th>
@@ -85,7 +86,7 @@
             </iframe>
         </section>
         <section id="referencias">
-            <h2>Referencias</h2>
+            <h2 class="subtitle">Referencias</h2>
             <article>
                 <blockquote>
                     Frase
@@ -118,7 +119,7 @@
             </article>
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <p>Información para que puedan contactarte.</p>
             <form action="#" method="post">
                 <label for="nombre">Nombre completo:</label>
