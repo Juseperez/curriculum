@@ -7,12 +7,13 @@
     <meta name="description" content="Curriculum Vitae de Juan Pérez">
     <meta name="author" content="Juan Pérez">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="stylesheet" href="./stylesheets/style.css">
     <title>Curriculum Vitae de Juan Pérez</title>
 </head>
 <body>
     <header>
-        <h1>Juan Pérez</h1>
+        <h1>Juan Sebastián Pérez Zamora</h1>
         <nav>
             <ul>
                 <li><a href="#perfil">Perfil</a></li>
@@ -32,7 +33,7 @@
         </section>
         <section id="experiencia">
             <h2 class="subtitle">Experiencia</h2>
-            <p>Detalles sobre tu experiencia laboral.</p>
+            <p>Pasantía en el departamento de IT en IESS.</p>
         </section>
         <section id="educacion">
             <h2 class="subtitle">Educación</h2>
@@ -92,8 +93,7 @@
                     Frase
                 </blockquote>
                 <p>
-                    <span>Nombre</span><br>
-                    Cargo<br>
+                    <span>Nombre1, Cargo1</span><br>
                     Descripción
                 </p>
             </article>
@@ -102,8 +102,7 @@
                     Frase2
                 </blockquote>
                 <p>
-                    <span>Nombre2</span><br>
-                    Cargo2<br>
+                    <span>Nombre2, Cargo2</span><br>
                     Descripción2
                 </p>
             </article>
@@ -112,8 +111,7 @@
                     Frase3
                 </blockquote>
                 <p>
-                    <span>Nombre3</span><br>
-                    Cargo3<br>
+                    <span>Nombre3, Cargo3</span><br>
                     Descripción3
                 </p>
             </article>
@@ -136,21 +134,17 @@
                 <fieldset>
                     <legend>¿Cómo prefieres ser contactado?</legend>
                     <label>
-                        <input type="radio"
-                        id="contacto-email"
-                        name="contacto" value="email" required>
+                        <input type="radio" id="contacto-email" name="contacto" value="email" required>
                         Email
                     </label>
                     <label>
-                        <input type="radio"
-                        id="contacto-telefono"
-                        name="contacto" value="telefono" required>
+                        <input type="radio" id="contacto-telefono" name="contacto" value="telefono" required>
                         Teléfono
                     </label>
                 </fieldset>
 
-                <label>Lenguajes de interés:</label>
-                <div>
+                <fieldset>
+                    <legend>Lenguajes de interés:</legend>
                     <label>
                         <input type="checkbox" name="lenguajes[]" value="python" required>
                         Python
@@ -167,7 +161,7 @@
                         <input type="checkbox" name="lenguajes[]" value="c++" required>
                         C++
                     </label>
-                </div>
+                </fieldset>
 
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
