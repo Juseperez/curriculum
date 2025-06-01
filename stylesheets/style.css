@@ -39,6 +39,17 @@ nav > ul {
   gap: 1rem;
 }
 
+nav > ul > li > a {
+    color: #7a4c2a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav > ul > li > a:hover {
+    color: #bc6a4c;
+}
+
 /* Selector por elemento para las etiquetas <section> */
 section {
   border: 0.2pt solid #a5b1b1;
@@ -96,4 +107,63 @@ section#referencias{
 
 section#referencias h2{
   grid-column: 1/-1;
+}
+
+section#referencias span {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.tabla-habilidades {
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.tabla-habilidades th,
+.tabla-habilidades td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-habilidades th {
+    background-color: #f2f2f2;
+}
+
+#perfil {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+#perfil #photo {
+    margin-bottom: 0;
+    max-width: 150px;
+    height: auto;
+}
+
+#perfil p {
+    margin: 0;
+}
+
+.titulonormal {
+    font-weight: bold;
+}
+
+.subtitulonormal {
+    font-weight: bold;
+    color: #747474;
+}
+
+.centro{
+    font-weight: bold;
+    text-align: center;
+}
+
+section#referencias p{
+    text-align: center;
 }
